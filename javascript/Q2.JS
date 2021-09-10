@@ -12,11 +12,11 @@ var mat2 = [
 function copy(arr) {
     var matcopy = [];
 
-    for (i = 0; i < arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         var elem = arr[i];
         var firstArr = [];
 
-        for (j = 0; j < elem.length; j++) {
+        for (var j = 0; j < elem.length; j++) {
             var newElem = arr[i][j];
             firstArr.push(newElem);
         }
