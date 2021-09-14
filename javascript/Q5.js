@@ -10,6 +10,7 @@ function distanceFromDirections(str) {
     for (var i = 0; i < str.length; i++) {
         var elem = str[i];
         if (elem === "N" || elem === "E" || elem === "W" || elem === "S") {
+
             totalDistance += directionsWithValue[elem];
         }
     }

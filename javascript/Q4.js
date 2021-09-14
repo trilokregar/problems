@@ -5,9 +5,9 @@ document.getElementById('file').onchange = function() {
     var file = this.files[0];
     var reader = new FileReader();
 
-    reader.onload = function(progressEvent) {
+    reader.onload = function() {
         // Entire file
-        // console.log(this.result);
+        // console.log("this.result is = ", this.result);
 
         // By lines
         var lines = this.result.split('\n');
@@ -29,7 +29,7 @@ document.getElementById('file').onchange = function() {
             console.log("req ips = ", requiredIPs);
             first8bitsOfIpv4InBinary.push(requiredIPs);
         }
-        console.log("needed ips for classification = ", first8bitsOfIpv4InBinary);
+        console.log("needed ips for classification in binary = ", first8bitsOfIpv4InBinary);
 
         // ////////// converting string array to integer array THEN binary to decimal ////////////
         var firstIpv4InDecimal = [];
